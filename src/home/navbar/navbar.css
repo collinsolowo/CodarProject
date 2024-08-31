@@ -1,0 +1,208 @@
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.boss{
+    overflow: hidden;
+}
+.Nav-House{
+    border-bottom: 1px solid white;
+    width:100vw;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.Nav-Logo{
+    /* border-bottom: 1px solid white; */
+    width: 10%;
+    height:inherit;
+    overflow-x: hidden;
+}
+
+.Nav-Logo>img{
+    width: 95%;
+    height: 96%;
+    overflow-x: hidden;
+}
+.Nav-Contents{
+    /* border: 1px solid white; */
+    width: 80%;
+    height:inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+}
+
+.Nav-Contents>.Nav-Link{
+width: 15%;
+height:inherit;
+color: white;
+text-align: center;
+overflow-x: hidden;
+}
+
+.Nav-Link>p{
+ font-size: 16px;
+ font-weight: 900;
+ margin-top: 23px;
+ border: 3px solid rgb(132, 0, 255);
+ padding-top: 10px;
+ padding-bottom:10px;
+ border-radius: 20px;
+ cursor: pointer;
+ overflow-x: hidden;
+}
+.Nav-Link>p>a{
+  color: rgb(39, 181, 247);
+}
+.Nav-Link>p:hover{
+    background-color: rgb(132, 0, 225);
+    color: white;
+    border: 3px solid white;
+    transition:all ease-in-out 500ms;
+    overflow-x: hidden;
+}
+.Nav-Link>p>a:hover{
+    color: white;
+}
+
+.Res-Nav-Icon{
+    width: 50px;
+    height: 50px;
+    margin-top: 18px;
+    cursor: pointer;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    display: none;
+}
+
+.Res-Nav-Icon>.fa-solid{
+    font-size: 30px;
+    color: white;
+    font-weight: 800;
+}
+
+.Nav-Slide{
+   background-color: black;
+   width: 100vw;
+   position: fixed;
+   height: calc(100vh - 90px);
+   display: flex;
+   flex-direction: column;
+   left:-1000%;
+   overflow-x: hidden;
+}
+.show{
+    transition: all ease-in-out 500ms;
+    left:0;
+    overflow-x: hidden;
+}
+.Nav-Slide>.items{
+    width: inherit;
+    height: 16.6%;
+    border-bottom: 1px solid white;
+    padding-top: 25px;
+    overflow-x: hidden;
+}
+.items>p{
+ font-size: 30px;
+ font-weight: 900;
+ font-family: Tahoma;
+ text-align: center;
+ cursor: pointer;
+ color: white;
+ overflow-x: hidden;
+}
+.items>p:hover{
+    transition: all ease-in-out 500ms;
+    /* font-size: 35px;
+    color: rgb(0, 132, 255); */
+    overflow-x: hidden;
+}
+@media screen and (min-width :1600px) {
+    .Nav-Link>p{
+        font-size: 21px;
+    }
+
+}
+
+@media screen and (max-width :1160px) {
+    .Nav-Link>p{
+        font-size: 13px;
+    }
+       .consultation-box>p{
+    font-size:16px;
+   }
+
+}
+
+@media screen and (max-width :1000px) {
+    .Nav-Link>p{ 
+        font-size: 9px;
+    } 
+ 
+}
+@media screen and (max-width :900px){
+   .consultation-box>p{
+    font-size: 16px;
+   }
+}
+@media screen and (max-width :400px){
+    .Nav-Logo{
+        width: 19%;
+    }
+    .items>p{
+     font-size: 25px;
+    }
+    .items>p:hover{
+        font-size: 30px;
+       }
+ }
+
+@media screen and (max-width :850px) {
+    .Nav-House{
+        justify-content:space-between;
+        padding-left: 5%;
+        padding-right: 3%;
+        position: fixed;
+    }
+    .Nav-Contents{
+        display: none;
+    }
+    .Nav-Logo{
+        width: 12%;
+    }
+    .consultation-box{
+        display: none;
+       }
+    .Res-Nav-Icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+    .Nav-Slide{
+        margin-top: 90px;
+    }
+    .Nav-Slide>.items>p>a:hover{
+        transition: all ease-in-out 500ms;
+        font-size: 40px;
+        color: rgb(59, 181, 252);
+    }
+    }
+    @media screen and (min-width :850px){
+        .Nav-Slide{
+            display: none;
+        }
+    }
+

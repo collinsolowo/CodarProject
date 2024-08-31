@@ -1,0 +1,229 @@
+.footer-House{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    justify-content: space-evenly;
+}
+
+.footer-Box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 370px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright>p{
+    font-size: 16px;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footee{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-Slide{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    height: 280px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.each-Slide{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 100;
+    color: rgb(216, 61, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.each-Slide>p>a{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(216, 61, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: all ease-in-out 500ms;
+}
+
+.each-Slide>p>a:hover{
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all ease-in-out 500ms;
+}
+
+.each-Slide>p>Link{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(216, 61, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: all ease-in-out 500ms;
+}
+
+.each-Slide>p>Link:hover{
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all ease-in-out 500ms;
+}
+
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 330px;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+
+.socials-logos-house{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 150px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials>p{
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.651);
+  margin-top: 70px;
+}
+.logo>a>.fa-brands{
+    font-size: 32px;
+    font-weight: 900;
+    overflow: hidden;
+}
+
+.facebook>a{
+    color: rgb(46, 181, 235);
+    font-size: 42px;
+    overflow: hidden;
+}
+
+.facebook>a:hover{
+    transition: all ease-in-out 500ms;
+    color: white;
+}
+
+.instagram>a{
+    color: rgb(0, 153, 255);
+    font-size: 42px;
+}
+
+.instagram>a:hover{
+    color: rgb(218, 26, 115);
+    transition: all ease-in-out 500ms;
+    color: white;
+}
+
+.x>a{
+    color: rgb(218, 26, 115);
+}
+
+.x>a:hover{
+    color: rgb(218, 26, 115);
+    transition: all ease-in-out 500ms;
+    color: white;
+}
+
+.pinterest>a{
+    color: rgb(141, 63, 63);
+}
+
+.pinterest>a:hover{
+    color: red;
+    transition: all ease-in-out 500ms;
+    color: white;
+}
+
+/* .logo:first-child{
+    margin-left: 75px;
+} */
+
+
+
+/* @media screen and (min-width:701px) {
+    .footer-Slide{
+        width: 15%;
+    }
+} */
+
+@media screen and (max-width:700px) {
+  .footer-House{
+    height: auto;
+  }
+  .footer-Box{
+    flex-direction: column;
+    height: auto;
+  }
+  .footee{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .socials{
+    width: 100%;
+  }
+  .socials>p{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  /* .logo:first-child{
+    margin-left: 3px;
+  } */
+  /* .socials-logos-house{
+    border: 1px solid white;\
+  } */
+}
+
+@media screen and (min-width:701px){
+   .socials>p{
+    font-size: 18px;
+    font-weight: 600;
+   }
+}

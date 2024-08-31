@@ -1,0 +1,218 @@
+.fixture-Box{
+    background-color: black;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+    border-bottom: 1px solid  rgb(151, 36, 151);
+}
+
+.fixture-Box>.fixture-Date{
+    width: 48%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.fixture-Date>.match-Date{
+    height: 50%;
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-left:1px solid rgb(150, 41, 150);
+    border-right:1px solid  rgb(151, 36, 151);
+}
+
+.match-Date:first-child{
+    border-top: none;
+}
+
+.match-Date:last-child{
+    border-bottom: none;
+}
+.match-Date>p{
+    color: blueviolet;
+    font-size: 65px;
+    font-family: cursive;
+    font-weight: 900;
+}
+
+.fixture-Box>.match-Fixture{
+    width: 48%;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 25px;
+    margin-left: 2%;
+    padding-top: 28px;
+}
+
+.fixture-Box>.match-Fixture>.home-club{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.fixture-Box>.match-Fixture>.home-club>p{
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+    letter-spacing: 10px;
+}
+
+.fixture-Box>.match-Fixture>.away-club{
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    
+}
+
+.fixture-Box>.match-Fixture>.away-club>p{
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+.versus{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 135%;
+    left: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.versus>p{
+    color: rgb(192, 47, 192);
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+@media screen and (min-width:701px){
+    .fixture-Box>.match-Fixture>.home-club>p{
+    font-size: 23px;
+    letter-spacing: 8px;
+  }
+  .fixture-Box>.match-Fixture>.away-club>p{
+    font-size: 23px;
+    letter-spacing: 3px;
+  }
+  .versus{
+    top: 122%;
+    left: 70%;
+  }
+}
+@media screen and (min-width:801px){
+    .fixture-Box>.match-Fixture>.home-club>p{
+    font-size: 26px;
+    letter-spacing: 8px;
+  }
+  .fixture-Box>.match-Fixture>.away-club>p{
+    font-size: 26px;
+    letter-spacing: 4px;
+  }
+  .versus{
+    /* top: 60%; */
+    left: 70%;
+  }
+}
+@media screen and (min-width:901px){
+    .fixture-Box>.match-Fixture>.home-club>p{
+    font-size: 35px;
+    letter-spacing: 8px;
+  }
+  .fixture-Box>.match-Fixture>.away-club>p{
+    font-size: 35px;
+    letter-spacing: 4px;
+  }
+
+}
+
+@media screen and (min-width : 1300px){
+    .fixture-Box>.match-Fixture>.home-club>p{
+        font-size: 45px;
+        }
+        .fixture-Box>.match-Fixture>.away-club>p{
+        font-size: 45px;
+      }
+ }
+
+ /* @media screen and (max-width : 1040px){
+    .fixture-Box>.match-Fixture>.home-club>p{
+        font-size: 30px;
+        letter-spacing: 8px;
+        }
+        .fixture-Box>.match-Fixture>.away-club>p{
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
+ } */
+
+@media screen and (max-width : 700px){
+    .fixture-Box{
+        flex-direction: column;
+        width: 0;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .fixture-Box>.fixture-Date{
+        width: 96%;
+        border-bottom:1px solid  rgb(151, 36, 151);
+    }
+    .fixture-Box>.match-Fixture{
+        width: 96%;
+    }
+    .fixture-Box>.match-Fixture>.home-club>p{
+        font-size: 24px;
+        letter-spacing: normal;
+        }
+    .fixture-Box>.match-Fixture>.away-club>p{
+        font-size: 24px;
+        letter-spacing: normal;
+      }
+    .fixture-Date{
+        height: 400px;
+    }
+    .match-Date:first-child{
+        height: 50%;
+    }
+    .match-Date:last-child{
+        height: 50%;
+    }
+    .match-Date>p{
+        font-size: 45px;
+    }
+    .versus{
+        left: 43%;
+        top: 180%;
+    }
+}
