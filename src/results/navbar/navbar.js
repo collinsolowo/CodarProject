@@ -22,25 +22,25 @@ function Navbar() {
                   <p><Link to={'/matches'}>MATCHES</Link></p>
                </div>
                <div className='Nav-Link'>
-                  <p><a href='https://www.google.com/search?q=epl&oq=e&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQo1MTU2MDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#wptab=si:ACC90nycDzs09chBzsA8de3cUDYRXukDd14AaFRpk98kQksU04uTWF7ibHFpynIyybkuxrLsI8AFmZgkDfD6vs3dN11XuGiy9lDxHrHzGz6JY6w5y8Z-IZktjjozJGeZza4QSQKQ53N5TetQjUZlRNhLn0lUWk83r5KpwcaovcJd-ca3tvD9u8E%3D' target="_blank" rel="noopener noreferrer">CLUBS</a></p>
+                  <p><a href='https://www.premierleague.com/clubs' target="_blank" rel="noopener noreferrer">CLUBS</a></p>
                </div>
                <div className='Nav-Link'>
                   <p><Link to={'/results'}>RESULTS</Link></p>
                </div>
                <div className='Nav-Link'>
-                  <p><Link to={'/transfers'}>TRANSFERS</Link></p>
+                  <p><a href='https://www.premierleague.com/transfers' target="_blank" rel="noopener noreferrer" >TRANSFERS</a></p>
                </div>
                <div className='Nav-Link'>
-               <p><a href='https://fantasy.premierleague.com/' target="_blank" rel="noopener noreferrer" >FANTASY</a></p>
+                  <p><a href='https://fantasy.premierleague.com/' target="_blank" rel="noopener noreferrer" >FANTASY</a></p>
                </div>
             </div>
             {/* <div className='Nav-Contacts'>
                {/* <div className='consultation-box'>
                   <p>Free Consultation</p>
                </div>
-            </div> */} 
+            </div> */}
             <div className='Res-Nav-Icon' onClick={SlideNav}>
-            <i class="fa-solid fa-bars"></i>
+               <i class="fa-solid fa-bars"></i>
             </div>
          </div>
          <div className='Nav-Slide'>
@@ -51,20 +51,20 @@ function Navbar() {
                <p><Link to={'/matches'}>MATCHES</Link></p>
             </div>
             <div className='items'>
-               <p><Link to={'/https://www.google.com/search?q=epl&oq=e&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQo1MTU2MDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#wptab=si:ACC90nycDzs09chBzsA8de3cUDYRXukDd14AaFRpk98kQksU04uTWF7ibHFpynIyybkuxrLsI8AFmZgkDfD6vs3dN11XuGiy9lDxHrHzGz6JY6w5y8Z-IZktjjozJGeZza4QSQKQ53N5TetQjUZlRNhLn0lUWk83r5KpwcaovcJd-ca3tvD9u8E%3D'}>CLUBS</Link></p>
+               <p><a href='https://www.premierleague.com/clubs' target="_blank" rel="noopener noreferrer">CLUBS</a></p>
             </div>
             <div className='items'>
                <p><Link to={'/results'}>RESULTS</Link></p>
             </div>
             <div className='items'>
-               <p><Link to={'/transfers'}>TRANSFERS</Link></p>
+               <p><a href='https://www.premierleague.com/transfers' target="_blank" rel="noopener noreferrer" >TRANSFERS</a></p>
             </div>
             <div className='items'>
                <p><a href='https://fantasy.premierleague.com/' target="_blank" rel="noopener noreferrer" >FANTASY</a></p>
-            </div>   
+            </div>
          </div>
       </div>
    )
-}  
+}
 
 export default Navbar

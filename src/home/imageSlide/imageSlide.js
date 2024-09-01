@@ -28,28 +28,28 @@ function Slider() {
 
         setTimeout(showTime, 1000);
         let slider = document.querySelector('.slide-house')
-        if (s === 10) {
+        if (s >0 && s<10) {
             slider.classList.remove('six')
             slider.classList.add('one')
         }
-        else if (s === 20) {
+        else if (s >10 && s<20) {
             slider.classList.remove('one')
             slider.classList.add('two')
         }
-        else if (s === 30) {
+        else if (s >20 && s<30) {
             slider.classList.remove('two')
             slider.classList.add('three')
 
         }
-        else if (s === 40) {
+        else if (s >30 && s<40) {
             slider.classList.remove('three')
             slider.classList.add('four')
         }
-        else if (s === 50) {
+        else if (s >40 && s<50) {
             slider.classList.remove('four')
             slider.classList.add('five')
         }
-        else if (s === 59) {
+        else if (s >50 && s<59) {
             slider.classList.remove('five')
             slider.classList.add('six')
         };

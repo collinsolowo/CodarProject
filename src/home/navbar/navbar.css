@@ -16,6 +16,7 @@
     overflow: hidden;
     background-color: black;
     overflow-x: hidden;
+    overflow: hidden;
 }
 
 .Nav-Logo{
@@ -23,12 +24,14 @@
     width: 10%;
     height:inherit;
     overflow-x: hidden;
+    overflow: hidden;
 }
 
 .Nav-Logo>img{
     width: 95%;
     height: 96%;
     overflow-x: hidden;
+    overflow: hidden;
 }
 .Nav-Contents{
     /* border: 1px solid white; */
@@ -37,6 +40,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    overflow: hidden;
     overflow-x: hidden;
 }
 
@@ -46,6 +50,7 @@ height:inherit;
 color: white;
 text-align: center;
 overflow-x: hidden;
+overflow: hidden;
 }
 
 .Nav-Link>p{
@@ -58,19 +63,22 @@ overflow-x: hidden;
  border-radius: 20px;
  cursor: pointer;
  overflow-x: hidden;
+ overflow: hidden;
 }
 .Nav-Link>p>a{
   color: rgb(39, 181, 247);
 }
-.Nav-Link>p:hover{
+.Nav-Link>p>a:hover{
     background-color: rgb(132, 0, 225);
     color: white;
     border: 3px solid white;
     transition:all ease-in-out 500ms;
     overflow-x: hidden;
+    overflow: hidden;
 }
 .Nav-Link>p>a:hover{
     color: white;
+    overflow: hidden;
 }
 
 .Res-Nav-Icon{
@@ -79,6 +87,7 @@ overflow-x: hidden;
     margin-top: 18px;
     cursor: pointer;
     overflow-x: hidden;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     border: none;
@@ -89,6 +98,7 @@ overflow-x: hidden;
     font-size: 30px;
     color: white;
     font-weight: 800;
+    overflow: hidden;
 }
 
 .Nav-Slide{
@@ -100,11 +110,13 @@ overflow-x: hidden;
    flex-direction: column;
    left:-1000%;
    overflow-x: hidden;
+   overflow: hidden;
 }
 .show{
     transition: all ease-in-out 500ms;
     left:0;
     overflow-x: hidden;
+    overflow: hidden;
 }
 .Nav-Slide>.items{
     width: inherit;
@@ -112,8 +124,9 @@ overflow-x: hidden;
     border-bottom: 1px solid white;
     padding-top: 25px;
     overflow-x: hidden;
+    overflow: hidden;
 }
-.items>p{
+.Nav-Slide>.items>p{
  font-size: 30px;
  font-weight: 900;
  font-family: Tahoma;
